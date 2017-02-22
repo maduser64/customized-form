@@ -1,0 +1,265 @@
+body {
+    background: url('../images/background.jpg');
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+h2 {
+    font-weight: 300;
+    color: white;
+    text-shadow: 0 2px 3px black;
+    margin: 50px 0 0 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 920px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.col:last-child:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.col {
+    width: 50%;
+    float: left;
+}
+
+.input, .input-checkbox {
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #999999;
+    font-size: 16px;
+    letter-spacing: -1px;
+    line-height: 20px;
+}
+
+.input-checkbox {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.input-checkbox-half {
+    width: 46%;
+    display: inline-block;
+}
+
+.input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.input i {
+    display: inline-block;
+    width: 20%;
+    line-height: 40px;
+    font-size: 25px;
+    float: left;
+    color: #aaaaaa;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label:before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    content: "";
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]+label {
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked+label span {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #47cfbd;
+    border-radius: 2px;
+    top: 6px;
+    left: 6px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], select {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-left: 5%;
+    width: 80%;
+    line-height: 40px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    float: left;
+    font-size: 16px;
+    background: #f9f9f9;
+    color: #999999;
+}
+
+textarea {
+    width: 89%;
+    display: block;
+    margin: 0 auto 20px auto;
+    resize: none;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    padding: 3%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+select {
+    height: 40px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: rgba(71, 207, 189, 0.7);
+    box-shadow: 0 0 7px rgba(71, 207, 189, 0.7);
+}
+
+.form {
+    padding: 15px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 10px 30px;
+}
+
+form {
+    padding: 20px;
+    background: #f9f9f9;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 95%;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.btn, .disabled {
+    box-shadow: inset 0px 1px 0px 0px #bee2f9;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #63e4ed), color-stop(1, #47cfbd));
+    background: -webkit-linear-gradient(top, #63e4ed 5%, #47cfbd 100%);
+    background: linear-gradient(to bottom, #63e4ed 5%, #47cfbd 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#63e4ed', endColorstr='#47cfbd', GradientType=0);
+    background-color: #63e4ed;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #14695e;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #7cd7de;
+}
+
+.btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #47cfbd), color-stop(1, #63e4ed));
+    background: -webkit-linear-gradient(top, #47cfbd 5%, #63e4ed 100%);
+    background: linear-gradient(to bottom, #47cfbd 5%, #63e4ed 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#47cfbd', endColorstr='#63e4ed', GradientType=0);
+    background-color: #47cfbd;
+}
+
+.btn-red {
+    box-shadow: inset 0px 1px 0px 0px #f5978e;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+    background: -webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f', GradientType=0);
+    background-color: #f24537;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+}
+
+.btn-red:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+    background: -webkit-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537', GradientType=0);
+    background-color: #c62d1f;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.75;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+}
+
+.disabled:hover {
+    box-shadow: inset 0px 1px 0px 0px #bee2f9;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #63e4ed), color-stop(1, #47cfbd));
+    background: -webkit-linear-gradient(top, #63e4ed 5%, #47cfbd 100%);
+    background: linear-gradient(to bottom, #63e4ed 5%, #47cfbd 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#63e4ed', endColorstr='#47cfbd', GradientType=0);
+    background-color: #63e4ed;
+    border-radius: 6px;
+    display: inline-block;
+    color: #14695e;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #7cd7de;
+}
+
+.btn-half {
+    width: 46%;
+    margin: 0 2%;
+    float: left;
+}
+
+.btn-half:nth-child(2n) {
+    float: right;
+}
+
+footer{
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:820px) {
+    .col {
+        width: 100%;
+    }
+    .container {
+        margin: 0 auto;
+        padding: 0;
+    }
+}
