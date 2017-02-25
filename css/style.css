@@ -245,12 +245,6 @@ form {
     float: right;
 }
 
-footer{
-  text-align: center;
-  font-size: 16px;
-  opacity: 0.7;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-}
 
 /* MEDIA QUERIES */
 
